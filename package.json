@@ -1,0 +1,12 @@
+{
+  "name": "letters-effect-tv-de-pelicula",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

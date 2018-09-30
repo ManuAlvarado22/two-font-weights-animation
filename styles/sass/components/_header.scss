@@ -1,0 +1,25 @@
+.header {
+    height: 100vh;
+
+    &__half {
+        color: #fff;
+        height: 50vh;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        backface-visibility: hidden;
+
+        &--top {
+            background-color: $header-background;
+        }
+        
+        &--bottom {
+            background-color: lighten($header-background, 20%);
+        }
+    }
+}

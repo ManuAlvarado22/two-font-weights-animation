@@ -1,0 +1,186 @@
+@keyframes toBottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50vh);
+  }
+}
+@keyframes toBottom2 {
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes toTop {
+  0% {
+    transform: translateY(50vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes toTop2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50vh);
+  }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.header {
+  height: 100vh;
+}
+.header__half {
+  color: #fff;
+  height: 50vh;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.header__half--top {
+  background-color: #ff3627;
+}
+.header__half--bottom {
+  background-color: #ff958d;
+}
+
+.nice-letters {
+  font-size: 14rem;
+  font-weight: 300;
+  letter-spacing: 1rem;
+  position: absolute;
+}
+@media screen and (max-width: 64.375em) {
+  .nice-letters {
+    font-size: 13rem;
+  }
+}
+@media screen and (max-width: 61.25em) {
+  .nice-letters {
+    font-size: 12rem;
+  }
+}
+@media screen and (max-width: 57.5em) {
+  .nice-letters {
+    font-size: 10.2rem;
+  }
+}
+@media screen and (max-width: 50em) {
+  .nice-letters {
+    font-size: 8.6rem;
+  }
+}
+@media screen and (max-width: 42.5em) {
+  .nice-letters {
+    font-size: 6.6rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .nice-letters {
+    font-size: 5.6rem;
+  }
+}
+@media screen and (max-width: 32.5em) {
+  .nice-letters {
+    font-size: 4.8rem;
+  }
+}
+@media screen and (max-width: 28.125em) {
+  .nice-letters {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (max-width: 21.875em) {
+  .nice-letters {
+    font-size: 3.2rem;
+  }
+}
+.nice-letters__single-letter {
+  display: inline-block;
+}
+.nice-letters__single-letter--1 {
+  animation: toBottom 1s ease-in-out forwards, toTop 1s 4.6s ease-in-out forwards;
+}
+.nice-letters__single-letter--2 {
+  animation: toBottom 1s 0.8s ease-in-out forwards, toTop 1s 5.4s ease-in-out forwards;
+}
+.nice-letters__single-letter--3 {
+  animation: toBottom 1s 1.2s ease-in-out forwards, toTop 1s 5.8s ease-in-out forwards;
+}
+.nice-letters__single-letter--4 {
+  animation: toBottom 1s 1.6s ease-in-out forwards, toTop 1s 6.2s ease-in-out forwards;
+}
+.nice-letters__single-letter--5 {
+  animation: toBottom 1s 2s ease-in-out forwards, toTop 1s 6.6s ease-in-out forwards;
+}
+.nice-letters__single-letter--6 {
+  animation: toBottom 1s 2.4s ease-in-out forwards, toTop 1s 7s ease-in-out forwards;
+}
+.nice-letters__single-letter--7 {
+  animation: toBottom 1s 2.8s ease-in-out forwards, toTop 1s 7.4s ease-in-out forwards;
+}
+.nice-letters__single-letter--8 {
+  animation: toBottom 1s 3.2s ease-in-out forwards, toTop 1s 7.8s ease-in-out forwards;
+}
+.nice-letters__single-letter--9 {
+  animation: toBottom 1s 3.6s ease-in-out forwards, toTop 1s 8.2s ease-in-out forwards;
+}
+.nice-letters__single-letter--thick-1 {
+  animation: toBottom2 1s 0.2s ease-in-out forwards, toTop2 1s 4.6s ease-in-out forwards;
+}
+.nice-letters__single-letter--thick-2 {
+  animation: toBottom2 1s 1s ease-in-out forwards, toTop2 1s 5.4s ease-in-out forwards;
+}
+.nice-letters__single-letter--thick-3 {
+  animation: toBottom2 1s 1.4s ease-in-out forwards, toTop2 1s 5.8s ease-in-out forwards;
+}
+.nice-letters__single-letter--thick-4 {
+  animation: toBottom2 1s 1.8s ease-in-out forwards, toTop2 1s 6.2s ease-in-out forwards;
+}
+.nice-letters__single-letter--thick-5 {
+  animation: toBottom2 1s 2.2s ease-in-out forwards, toTop2 1s 6.6s ease-in-out forwards;
+}
+.nice-letters__single-letter--thick-6 {
+  animation: toBottom2 1s 2.6s ease-in-out forwards, toTop2 1s 7s ease-in-out forwards;
+}
+.nice-letters__single-letter--thick-7 {
+  animation: toBottom2 1s 3s ease-in-out forwards, toTop2 1s 7.4s ease-in-out forwards;
+}
+.nice-letters__single-letter--thick-8 {
+  animation: toBottom2 1s 3.4s ease-in-out forwards, toTop2 1s 7.8s ease-in-out forwards;
+}
+.nice-letters__single-letter--thick-9 {
+  animation: toBottom2 1s 3.8s ease-in-out forwards, toTop2 1s 8.2s ease-in-out forwards;
+}
+.nice-letters--thick {
+  font-weight: 900;
+}
+.nice-letters--thick .nice-letters__single-letter {
+  transform: translateY(-50vh);
+}
+
+/*# sourceMappingURL=style.css.map */

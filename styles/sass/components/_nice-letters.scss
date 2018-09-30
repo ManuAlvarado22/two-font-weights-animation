@@ -1,0 +1,186 @@
+.nice-letters {
+    font-size: 14rem;
+    font-weight: 300;
+    letter-spacing: 1rem;
+    // line-height: 1;
+    position: absolute;
+    // display: inline-block;
+
+    @media screen and (max-width: 64.375em) {
+        font-size: 13rem;
+    }
+
+    @media screen and (max-width: 61.25em) {
+        font-size: 12rem;
+    }
+
+    @media screen and (max-width: 57.5em) {
+        font-size: 10.2rem;
+    }
+
+    @media screen and (max-width: 50em) {
+        font-size: 8.6rem;
+    }
+
+    @media screen and (max-width: 42.5em) {
+        font-size: 6.6rem;
+    }
+
+    @media screen and (max-width: 37.5em) {
+        font-size: 5.6rem;
+    }
+
+    @media screen and (max-width: 32.5em) {
+        font-size: 4.8rem;
+    }
+
+    @media screen and (max-width: 28.125em) {
+        font-size: 3.6rem;
+    }
+
+    @media screen and (max-width: 21.875em) {
+        font-size: 3.2rem;
+    }
+
+    &__single-letter {
+        display: inline-block;
+
+        $delay: .4;
+        @for $i from 1 through 9 {
+            &--#{$i} {
+                @if $i == 1 {
+                    animation: toBottom 1s ease-in-out forwards,
+                               toTop 1s 4.6s ease-in-out forwards; 
+                }
+                @else {
+                    animation: toBottom 1s #{$delay}s ease-in-out forwards,
+                               toTop 1s #{$delay + 4.6}s ease-in-out forwards; 
+                }
+
+                $delay: $delay + .4;
+            }
+        }
+
+        $delay: .4;
+        @for $i from 1 through 9 {
+            &--thick-#{$i} {
+                @if $i == 1 {
+                    animation: toBottom2 1s .2s ease-in-out forwards,
+                               toTop2 1s 4.6s ease-in-out forwards;
+                }
+                @else {
+                    animation: toBottom2 1s #{$delay + .2s} ease-in-out forwards,
+                               toTop2 1s #{$delay + 4.6}s ease-in-out forwards; 
+                }
+
+                $delay: $delay + .4;
+            }
+        }
+
+        // &--1 {
+        //     animation: toBottom 1s ease-in-out forwards,
+        //                toTop 1s 4.6s ease-in-out forwards;
+        // }
+        
+        // &--2 {
+        //     animation: toBottom 1s .4s ease-in-out forwards,
+        //                toTop 1s 5s ease-in-out forwards;
+        // }
+
+        // &--3 {
+        //     animation: toBottom 1s .8s ease-in-out forwards,
+        //                toTop 1s 5.4s ease-in-out forwards;
+        // }
+
+        // &--4 {
+        //     animation: toBottom 1s 1.2s ease-in-out forwards,
+        //                toTop 1s 5.8s ease-in-out forwards;
+        // }
+
+        // &--5 {
+        //     animation: toBottom 1s 1.6s ease-in-out forwards,
+        //                toTop 1s 6.2s ease-in-out forwards;
+        // }
+
+        // &--6 {
+        //     animation: toBottom 1s 2s ease-in-out forwards,
+        //                toTop 1s 6.6s ease-in-out forwards;
+        // }
+
+        // &--7 {
+        //     animation: toBottom 1s 2.4s ease-in-out forwards,
+        //                toTop 1s 7s ease-in-out forwards;
+        // }
+
+        // &--8 {
+        //     animation: toBottom 1s 2.8s ease-in-out forwards,
+        //                toTop 1s 7.4s ease-in-out forwards;
+        // }
+
+        // &--9 {
+        //     animation: toBottom 1s 3.2s ease-in-out forwards,
+        //                toTop 1s 7.8s ease-in-out forwards;
+        // }
+
+        // &--thick-1 {
+        //     animation: toBottom2 1s .2s ease-in-out forwards,
+        //                toTop2 1s 4.6s ease-in-out forwards;
+        // }
+        
+        // &--thick-2 {
+        //     animation: toBottom2 1s .6s ease-in-out forwards,
+        //                toTop2 1s 5s ease-in-out forwards;
+        // }
+    
+        // &--thick-3 {
+        //     animation: toBottom2 1s 1s ease-in-out forwards,
+        //                toTop2 1s 5.4s ease-in-out forwards;
+        // }
+    
+        // &--thick-4 {
+        //     animation: toBottom2 1s 1.4s ease-in-out forwards,
+        //                toTop2 1s 5.8s ease-in-out forwards;
+        // }
+    
+        // &--thick-5 {
+        //     animation: toBottom2 1s 1.8s ease-in-out forwards,
+        //                toTop2 1s 6.2s ease-in-out forwards;
+        // }
+    
+        // &--thick-6 {
+        //     animation: toBottom2 1s 2.2s ease-in-out forwards,
+        //                toTop2 1s 6.6s ease-in-out forwards;
+        // }
+    
+        // &--thick-7 {
+        //     animation: toBottom2 1s 2.6s ease-in-out forwards,
+        //                toTop2 1s 7s ease-in-out forwards;
+        // }
+    
+        // &--thick-8 {
+        //     animation: toBottom2 1s 3s ease-in-out forwards,
+        //                toTop2 1s 7.4s ease-in-out forwards;
+        // }
+    
+        // &--thick-9 {
+        //     animation: toBottom2 1s 3.4s ease-in-out forwards,
+        //                toTop2 1s 7.8s ease-in-out forwards;
+        // }
+    }
+    
+    &--thick {
+        font-weight: 900;
+    }
+
+    &--thick &__single-letter {
+        transform: translateY(-50vh);
+    }
+
+    &--top {
+
+    }
+    
+    &--bottom {
+
+    }
+}
